@@ -6,7 +6,7 @@ import { itemsRoute } from './routes/items.route';
 import { selectedRoute } from './routes/selected.route';
 
 const app = express();
-const PORT = 3000;
+const PORT = Number(process.env.PORT) || 3000;
 
 app.use(cors());
 app.use(express.json());
