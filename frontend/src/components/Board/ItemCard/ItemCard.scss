@@ -1,0 +1,45 @@
+.item-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  height: 49px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  box-sizing: border-box;
+
+  &__title {
+    font-size: 15px;
+    flex: 1;
+  }
+
+  &__button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 13px;
+
+    &:hover {
+      background: #f0f0f0;
+    }
+
+    &--drag {
+      cursor: grab;
+
+      &:active {
+        cursor: grabbing;
+      }
+    }
+
+    &--remove {
+      color: #c33;
+      border-color: #eaa;
+
+      &:hover {
+        background: #fee;
+      }
+    }
+  }
+}
